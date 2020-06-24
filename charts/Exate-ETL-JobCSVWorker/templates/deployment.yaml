@@ -26,7 +26,7 @@ spec:
         - name: dockerlogin
       containers:
         - name: {{ .Chart.Name }}
-          image: {{ .Values.image.dockerImage }}
+          image: zeeshanexate/exateetljobcsv
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["dotnet", "Ex8.EtlJobCsvWorker.dll"]
           envFrom:
