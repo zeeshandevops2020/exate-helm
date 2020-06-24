@@ -1,0 +1,30 @@
+namespace: 
+config:
+    APP_ENVIRONMENT: 
+    BUILD_VERSION: 
+    DB_SECOWSER_DATA_SOURCE: 
+    DB_SECOWSER_INITIAL_CATALOG: 
+    DB_SECOWSER_USER_ID: 
+    DB_CACHE_DATA_SOURCE: 
+    DB_CACHE_INITIAL_CATALOG: 
+    DB_CACHE_USER_ID: 
+    SERILOG__WRITETO__0__ARGS__SERVERURL:
+    COMMUNICATION__RABBITMQ__HOST: 
+    COMMUNICATION__RABBITMQ__PORT: 
+    COMMUNICATION__RABBITMQ__USERNAME: 
+image:
+  name:
+  pullPolicy: Always
+  dockerImage: 
+  dockerTag: 
+resources:
+  cpu: 400m
+  memory: 400Mi
+  limits:
+    cpu: 800m
+    memory: 1000Mi
+db:
+  DB_CACHE_PASSWORD: 
+  DB_SECOWSER_PASSWORD: 
+rabbitMQ:
+  password: 

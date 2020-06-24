@@ -1,0 +1,28 @@
+namespace: 
+config:
+  ASPNETCORE_ENVIRONMENT: 
+  BUILD_VERSION: 
+  ORIGIN: 
+  DB__AUTH__DATA_SOURCE: 
+  DB__AUTH__INITIAL_CATALOG: 
+  DB__EXATE__DATA_SOURCE: 
+  DB__EXATE__INITIAL_CATALOG: 
+  DB__AUTH__USER_ID: 
+  DB__EXATE__USER_ID: 
+  SERILOG__WRITETO__0__ARGS__SERVERURL: 
+image:
+  name: 
+  pullPolicy: Always
+  dockerImage: 
+  dockerTag: 
+resources:
+  cpu: 400m
+  memory: 400Mi
+  limits:
+    cpu: 600m
+    memory: 1000Mi
+db:
+  auth:
+    password: 
+  exate:
+    password: 

@@ -1,0 +1,10 @@
+apiVersion: v3
+name: exatedatasubjectapi
+version: 1.0.1
+description: An Exate DataSubject WebApi Core application deployment
+home: https://dev.azure.com/exatetechnology/exatetechnology/_git/exate.rules.core
+sources:
+  - https://dev.azure.com/exatetechnology/exatetechnology/_git/exate.rules.core
+maintainers:
+  - name: Exate
+    email: zeeshane@exate.com

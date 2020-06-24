@@ -1,0 +1,10 @@
+apiVersion: v3
+name: exateetlunitofworksqlserver
+version: 1.0.1
+description: An Exate Unitofwork SQLserver application deployment
+home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+sources:
+  - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+maintainers:
+  - name: Exate
+    email: zeeshan@exate.com

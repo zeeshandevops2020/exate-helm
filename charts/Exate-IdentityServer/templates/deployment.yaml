@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Chart.Name }}
+    release: "{{ .Chart.Name }}"
+    heritage: {{ .Release.Service }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+        chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+        release: "{{ .Chart.Name }}"
+        heritage: {{ .Release.Service }}
+    spec:
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: dockerlogin
+      containers:
+        - name: {{ .Chart.Name }}
+          image: {{ .Values.image.dockerImage }}:{{ .Values.image.dockerTag }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command: ["dotnet", "Ex8.IdentityServer.dll"]
+          envFrom:
+            - configMapRef:
+                name: {{ .Chart.Name }}
+          env:
+            - name: DB__AUTH__PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Chart.Name }}
+                  key: db.DB__AUTH__PASSWORD
+            - name: DB__EXATE__PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Chart.Name }}
+                  key: db.DB__EXATE__PASSWORD
+          args: ["-logtostderr", "true"]
+          ports:
+            - containerPort: 80
+            - containerPort: 443
+          resources:
+            requests:
+              cpu: {{ .Values.resources.cpu }}
+              memory: {{ .Values.resources.memory }}
+            limits:
+              cpu: {{ .Values.resources.limits.cpu }}
+              memory: {{ .Values.resources.limits.memory }}

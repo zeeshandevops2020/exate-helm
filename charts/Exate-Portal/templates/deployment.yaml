@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Chart.Name }}
+    release: "{{ .Chart.Name }}"
+    heritage: {{ .Release.Service }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+        chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+        release: "{{ .Chart.Name }}"
+        heritage: {{ .Release.Service }}
+    spec:
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: dockerlogin
+      containers:
+        - name: {{ .Chart.Name }}
+          image: {{ .Values.image.dockerImage }}:{{ .Values.image.dockerTag }}
+          imagePullPolicy: {{  .Values.image.pullPolicy }}
+          env:
+          - name: ENVIRONMENT
+            value: {{ .Values.config.ENVIRONMENT }}
+          - name: IS_PRODUCTION
+            value: {{ .Values.config.IS_PRODUCTION }}
+          - name: API_HOST
+            value: {{ .Values.config.API_HOST }}
+          - name: AUTH_HOST
+            value: {{ .Values.config.AUTH_HOST }}
+          - name: API_HOST_DATA_SUBJECT
+            value: {{ .Values.config.API_HOST_DATA_SUBJECT }}
+          - name: API_HOST_ETL
+            value: {{ .Values.config.API_HOST_ETL }}
+          - name: API_HOST_VAULT
+            value: {{ .Values.config.API_HOST_VAULT }}
+          - name: UI_HOST_VAULT
+            value: {{ .Values.config.UI_HOST_VAULT }}
+          - name: API_HOST_THIRD_PARTY
+            value: {{ .Values.config.API_HOST_THIRD_PARTY }}
+          - name: allowedUrls
+            value: {{ .Values.config.allowedUrls }}
+          command: ["/bin/sh",  "-c",  "envsubst < /usr/share/nginx/html/assets/environments/env.template.js > /usr/share/nginx/html/assets/environments/env.js && exec nginx -g 'daemon off;'"]
+          ports:
+            - containerPort: 80
+            - containerPort: 443
+
+
+
+
+
+
+
+

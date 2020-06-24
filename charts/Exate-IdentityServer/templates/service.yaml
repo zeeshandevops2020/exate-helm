@@ -1,0 +1,21 @@
+# Thie file sets up in-cluster service discovery for our app.
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Chart.Name }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Chart.Name }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+  annotations:
+    prometheus.io/scrape: "true"
+spec:
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    #targetPort: http
+  selector:
+    app: {{ .Chart.Name }}

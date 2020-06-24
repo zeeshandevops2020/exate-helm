@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: {{ .Chart.Name }}
+    namespace: {{ .Values.namespace }}
+    labels:
+      app: {{ .Chart.Name }}
+      release: "{{ .Chart.Name }}"
+      heritage: {{ .Release.Service }}
+      chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+data:
+  ASPNETCORE_ENVIRONMENT: {{ .Values.config.ASPNETCORE_ENVIRONMENT }}
+  BUILD_VERSION: {{ .Values.config.BUILD_VERSION}}
+  ISSUER_URL: {{ .Values.config.ISSUER_URL }}
+  ALLOWED_ORIGINS__0: {{ .Values.config.ALLOWED_ORIGINS__0 }}
+  ALLOWED_ORIGINS__1: {{ .Values.config.ALLOWED_ORIGINS__1 }}
+  DB__DATA_SOURCE: {{ .Values.config.DB__DATA_SOURCE }}
+  DB__INITIAL_CATALOG: {{ .Values.config.DB__INITIAL_CATALOG }}
+  DB__USER_ID: {{ .Values.config.DB__USER_ID }}
+  SERILOG__WRITETO__0__ARGS__SERVERURL: {{ .Values.config.SERILOG__WRITETO__0__ARGS__SERVERURL}}
+  FILESHARE__USERNAME: {{ .Values.config.FILESHARE__USERNAME }}
+  VAULT_API_URL: {{ .Values.config.VAULT_API_URL }}

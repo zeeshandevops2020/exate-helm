@@ -1,0 +1,29 @@
+namespace: 
+config:
+  ASPNETCORE_ENVIRONMENT: 
+  BUILD_VERSION: 
+  ISSUER_URL: 
+  ALLOWED_ORIGINS__0: 
+  ALLOWED_ORIGINS__1: 
+  DB__DATA_SOURCE: 
+  DB__INITIAL_CATALOG: 
+  DB__USER_ID: 
+  SERILOG__WRITETO__0__ARGS__SERVERURL: 
+  FILESHARE__USERNAME: 
+  ISSUER_URL: 
+  VAULT_API_URL: 
+image:
+  name: 
+  pullPolicy: Always
+  dockerImage: 
+  dockerTag: 
+resources:
+  cpu: 500m
+  memory: 400Mi
+  limits:
+    cpu: 500m
+    memory: 400Mi
+db:
+  password: 
+fileshare:
+  password: 

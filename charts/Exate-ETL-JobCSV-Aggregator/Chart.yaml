@@ -1,0 +1,11 @@
+apiVersion: v3
+name: exateetljobcsvaggregator
+version: 1.0.1
+description: An Exate ETL Exate Job CSV Aggregator application deployment
+home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+sources:
+  - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+maintainers:
+  - name: Exate
+    email: zeeshan@exate.com
+    

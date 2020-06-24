@@ -1,0 +1,22 @@
+namespace: 
+image:
+  name: 
+  pullPolicy: Always
+  dockerImage: 
+  dockerTag: 
+resources:
+  cpu: 400m
+  memory: 400Mi
+  limits:
+    cpu: 800m
+    memory: 1000Mi
+config:
+  ENVIRONMENT: 
+  IS_PRODUCTION: 
+  API_HOST: 
+  AUTH_HOST: 
+  API_HOST_DATA_SUBJECT: 
+  API_HOST_ETL: 
+  API_HOST_VAULT: 
+  UI_HOST_VAULT: 
+  API_HOST_THIRD_PARTY: 

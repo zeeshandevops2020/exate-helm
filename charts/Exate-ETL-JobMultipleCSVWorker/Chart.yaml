@@ -1,0 +1,10 @@
+apiVersion: v3
+name: exateetljobmultipledsvworker
+version: 1.0.1
+description: An Exate ETL Exate Job Multiple DSV Worker application deployment
+home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+sources:
+  - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+maintainers:
+  - name: Exate
+    email: zeeshan@exate.com

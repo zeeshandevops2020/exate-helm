@@ -1,0 +1,26 @@
+namespace: 
+config:
+    APP_ENVIRONMENT: 
+    BUILD_VERSION: 
+    DB_DATA_SOURCE: 
+    DB_INITIAL_CATALOG: 
+    DB_USER_ID: 
+    SERILOG__WRITETO__0__ARGS__SERVERURL:
+    COMMUNICATION__RABBITMQ__HOST: 
+    COMMUNICATION__RABBITMQ__PORT:
+    COMMUNICATION__RABBITMQ__USERNAME:
+image:
+  name: 
+  pullPolicy: Always
+  dockerImage: 
+  dockerTag: 
+resources:
+  cpu: 400m
+  memory: 400Mi
+  limits:
+    cpu: 800m
+    memory: 1000Mi
+db:
+  password: 
+rabbitMQ:
+  password: 

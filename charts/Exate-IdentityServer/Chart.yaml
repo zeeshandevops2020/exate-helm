@@ -1,0 +1,10 @@
+apiVersion: v1
+name: exate-identity-server
+version: 1.0.1
+description: An Exate DataSubject WebApi Core application deployment
+home: https://dev.azure.com/exatetechnology/exatetechnology/_git/exate-identity-server
+sources:
+  - https://dev.azure.com/exatetechnology/exatetechnology/_git/exate-identity-server
+maintainers:
+  - name: Exate
+    email: zeeshan@exate.com
