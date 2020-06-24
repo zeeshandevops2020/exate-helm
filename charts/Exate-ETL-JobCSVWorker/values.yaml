@@ -12,7 +12,7 @@ config:
 image:
   name:
   pullPolicy: Always
-  dockerImage: zeeshanexate/exateetljobcsv
+  dockerImage: 
   dockerTag: 
 resources:
   cpu: 400m
