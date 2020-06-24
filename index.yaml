@@ -1,0 +1,213 @@
+apiVersion: v1
+entries:
+  exate-identity-server:
+  - apiVersion: v1
+    created: "2020-06-24T08:25:25.985218459+05:30"
+    description: An Exate DataSubject WebApi Core application deployment
+    digest: dd6f2d58665d5d758de1a8b81fb6b2fc4b7640de22f6092b5db4feacc940bea0
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/exate-identity-server
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exate-identity-server
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/exate-identity-server
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exate-identity-server-1.0.1/exate-identity-server-1.0.1.tgz
+    version: 1.0.1
+  exate-merger:
+  - apiVersion: v2
+    created: "2020-06-24T08:25:26.0753761+05:30"
+    description: An Exate ETL Exate Merger application deployment
+    digest: 85ecd6762944e6601db5123ff0c237bd57606b842c4ae3e7a922081649d4f1db
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exate-merger
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exate-merger-1.0.1/exate-merger-1.0.1.tgz
+    version: 1.0.1
+  exate-partitioner:
+  - apiVersion: v3
+    created: "2020-06-24T08:25:26.183720322+05:30"
+    description: An Exate ETL Exate Partitioner application deployment
+    digest: 47e0ae36116e6be3da1b979e4061f5c29b183215c08a212be320deb306e41b73
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exate-partitioner
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exate-partitioner-1.0.1/exate-partitioner-1.0.1.tgz
+    version: 1.0.1
+  exate-unitofwork:
+  - apiVersion: v3
+    created: "2020-06-24T08:25:26.293468119+05:30"
+    description: An Exate HierarchyFileWorker Unitofwork application deployment
+    digest: ff7d8de1d1a809b1063657849da9a56c2cbfe54aaa42ddfb6d82d2234ec95feb
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exate-unitofwork
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exate-unitofwork-1.0.1/exate-unitofwork-1.0.1.tgz
+    version: 1.0.1
+  exateetlapi:
+  - apiVersion: v1
+    created: "2020-06-24T08:25:26.407833993+05:30"
+    description: An Exate ETL API application deployment
+    digest: 4c0b60484691a5cdfa5eed541e074831f2ea5011eb015010730f29d8a76c0834
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exateetlapi
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exateetlapi-1.0.1/exateetlapi-1.0.1.tgz
+    version: 1.0.1
+  exateetljobcsv:
+  - apiVersion: v3
+    created: "2020-06-24T08:25:26.509422465+05:30"
+    description: An Exate ETL Exate Job CSV application deployment
+    digest: c8bac03b6acfc2a17469f294d0c0b57f4f7aacfd23a9e7ff6cd940d3db2f01d2
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exateetljobcsv
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exateetljobcsv-1.0.1/exateetljobcsv-1.0.1.tgz
+    version: 1.0.1
+  exateetljobcsvaggregator:
+  - apiVersion: v3
+    created: "2020-06-24T08:25:26.609011843+05:30"
+    description: An Exate ETL Exate Job CSV Aggregator application deployment
+    digest: 763dc06d03152efe027c3d85181179c9dac4efd0fe76e8e2759ce5de257c13e1
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exateetljobcsvaggregator
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exateetljobcsvaggregator-1.0.1/exateetljobcsvaggregator-1.0.1.tgz
+    version: 1.0.1
+  exateetljobmultipledsvworker:
+  - apiVersion: v3
+    created: "2020-06-24T08:25:26.69943797+05:30"
+    description: An Exate ETL Exate Job Multiple DSV Worker application deployment
+    digest: 35cb514fdbb367515edaae9087fae793fc663744cbe9fd0472e8b0d69f6e396d
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exateetljobmultipledsvworker
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exateetljobmultipledsvworker-1.0.1/exateetljobmultipledsvworker-1.0.1.tgz
+    version: 1.0.1
+  exateetljobsqlserver:
+  - apiVersion: v3
+    created: "2020-06-24T08:25:26.80045602+05:30"
+    description: An Exate ETL Job SQL Server application deployment
+    digest: 57b778e7c66d702b74d351836703ed772a4186e5cfe93fbcfb0a499b73d55e07
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exateetljobsqlserver
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exateetljobsqlserver-1.0.1/exateetljobsqlserver-1.0.1.tgz
+    version: 1.0.1
+  exateetljobstatusworker:
+  - apiVersion: v2
+    created: "2020-06-24T08:25:26.888286789+05:30"
+    description: An Exate ETL Job Status Worker application deployment
+    digest: 69dbb4df1dcea1f5a45506f0b96e44e6899c75e81080ec10f2c2d7bee2d99ad7
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exateetljobstatusworker
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exateetljobstatusworker-1.0.1/exateetljobstatusworker-1.0.1.tgz
+    version: 1.0.1
+  exateetlunitofworkcsv:
+  - apiVersion: v3
+    created: "2020-06-24T08:25:26.986468675+05:30"
+    description: An Exate ETL Unitofwork Csv application deployment
+    digest: e73155bdd03bc71ec3e694597c9ee3e581e926b3f1045ab962a4e6f79d202b77
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exateetlunitofworkcsv
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exateetlunitofworkcsv-1.0.1/exateetlunitofworkcsv-1.0.1.tgz
+    version: 1.0.1
+  exateetlunitofworksqlserver:
+  - apiVersion: v3
+    created: "2020-06-24T08:25:27.085418449+05:30"
+    description: An Exate Unitofwork SQLserver application deployment
+    digest: 80c7a63acbd4908ff0ba43137ea588709426063d11a53f27c5ae835dc4a33add
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exateetlunitofworksqlserver
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exateetlunitofworksqlserver-1.0.1/exateetlunitofworksqlserver-1.0.1.tgz
+    version: 1.0.1
+  exateportal:
+  - apiVersion: v1
+    created: "2020-06-24T08:25:27.282353724+05:30"
+    description: An Exate ETL API application deployment
+    digest: 686869cbc4e4ed8cc06c7201a50999a36ac287c59268bd427ff042d409b76925
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exateportal
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/ex8ETL
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exateportal-1.0.1/exateportal-1.0.1.tgz
+    version: 1.0.1
+  exaterulesapi:
+  - apiVersion: v3
+    created: "2020-06-24T08:25:27.380145732+05:30"
+    description: An Exate Rules WebApi Core application deployment
+    digest: 78911b9f5306e9faa5560a215db6dce88afdaf23d8f2a4475d3e4f88f02540da
+    home: https://dev.azure.com/exatetechnology/exatetechnology/_git/exate.rules.core
+    maintainers:
+    - email: zeeshan@exate.com
+      name: Exate
+    name: exaterulesapi
+    sources:
+    - https://dev.azure.com/exatetechnology/exatetechnology/_git/exate.rules.core
+    urls:
+    - https://github.com/zeeshandevops2020/exate-helm/releases/download/exaterulesapi-1.0.1/exaterulesapi-1.0.1.tgz
+    version: 1.0.1
+generated: "2020-06-24T08:25:25.61974883+05:30"
